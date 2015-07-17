@@ -1,0 +1,18 @@
+## This is a directory/file filter for WinMerge
+name: Ignore Backup Files
+desc: Suppresses files that end in .bak or start with '~' and all files in .git folder
+
+## This is an inclusive (loose) filter
+## (it lets through everything not specified)
+def: include
+
+## Filters for filenames begin with f:
+## Filters for directories begin with d:
+## (Inline comments begin with " ##" and extend to the end of the line)
+
+f: \~[\w]*\.[\w]*$ 
+f: \.bak$ 
+f: \.BAK$
+f: \.gitignore$   ## .gitignore files
+
+d: \.git$  ## exclude the .git folder
