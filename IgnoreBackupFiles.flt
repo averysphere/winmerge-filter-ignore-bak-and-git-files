@@ -15,5 +15,5 @@ f: \.bak$
 f: \.BAK$
 f: \.gitignore$   ## .gitignore files
 
-d: \.git$  ## exclude the .git folder
-d: \.svn$  ## exclude the .svn folder
+d: \\.git$  ## exclude the .git folder
+d: \\.svn$  ## exclude the .svn folder
